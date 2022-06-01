@@ -444,9 +444,12 @@
 		@apply rounded-3xl bg-[#181818];
 	}
 	.accordion__title {
-		@apply flex cursor-pointer items-center p-5 justify-between md:h-[97px] text-primary font-bold text-sm after:transition-all after:duration-300 after:h-[19px] after:block after:content-[url("../public/img/arrow-down.png")] after:ml-3 xs:text-base md:text-lg md:p-6 lg:p-7 lg:text-xl xl:p-8 2xl:p-9;
+		@apply flex cursor-pointer items-center p-5 justify-between md:h-[97px] text-primary font-bold text-sm  xs:text-base md:text-lg md:p-6 lg:p-7 lg:text-xl xl:p-8 2xl:p-9;
 	}
-	.accordion__title.active::after {
+	.accordion__title img {
+		@apply transition-all duration-300 h-[19px] block ml-3;
+	}
+	.accordion__title.active img {
 		@apply rotate-180;
 	}
 	.accordion__body {

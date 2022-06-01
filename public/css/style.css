@@ -3983,17 +3983,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(240 238 235 / var(--tw-text-opacity));
 }
 
-.accordion__title::after {
-  margin-left: 0.75rem;
-  display: block;
-  height: 19px;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
-  --tw-content: url("../public/img/arrow-down.png");
-  content: var(--tw-content);
-}
-
 @media (min-width: 500px) {
   .accordion__title {
     font-size: 1rem;
@@ -4030,7 +4019,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.accordion__title.active::after {
+.accordion__title img {
+  margin-left: 0.75rem;
+  display: block;
+  height: 19px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.accordion__title.active img {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
