@@ -3989,7 +3989,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
-  --tw-content: url("../img/arrow-down.svg");
+  --tw-content: url("../img/arrow-down.png");
   content: var(--tw-content);
 }
 
