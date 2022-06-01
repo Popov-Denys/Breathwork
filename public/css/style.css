@@ -2775,10 +2775,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .gallery__logo {
     max-width: 100%;
   }
-
-  .slider {
-    margin-bottom: 6rem;
-  }
 }
 
 .gallery {
@@ -2924,6 +2920,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .slider {
   margin-bottom: 2.5rem;
   min-width: 0px;
+}
+
+@media (min-width: 1024px) {
+  .slider {
+    margin-bottom: 6rem;
+  }
 }
 
 .slick-track {
@@ -4141,8 +4143,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(240 238 235 / var(--tw-text-opacity));
 }
@@ -4194,8 +4196,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .footer__description {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 11px;
 }
 
 @media (min-width: 768px) {
@@ -4213,8 +4214,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .footer__caption {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 11px;
 }
 
 @media (min-width: 768px) {

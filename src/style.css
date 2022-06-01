@@ -274,9 +274,6 @@
 	.gallery__logo {
 		@apply max-w-[198px] mx-auto flex justify-center mb-10 xs:mb-12 xs:max-w-[148px] sm:mb-14 sm:max-w-[198px] md:mb-16 md:max-w-[248px] lg:mb-20 lg:max-w-[298px] xl:max-w-[348px] 2xl:max-w-full;
 	}
-	.slider {
-		@apply 2xl:mb-24;
-	}
 	.gallery {
 		@apply mb-24 md:mb-28 lg:mb-32 xl:mb-40 2xl:mb-48;
 	}
@@ -290,7 +287,7 @@
 		@apply text-secondary font-bold text-sm xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
 	}
 	.slider {
-		@apply min-w-0 mb-10;
+		@apply min-w-0 mb-10 lg:mb-24;
 	}
 	.slick-track {
 		@apply flex overflow-hidden;
@@ -468,13 +465,13 @@
 		@apply border-t-[2px] border-solid border-[#272727];
 	}
 	.footer__body {
-		@apply text-primary py-5 px-1 flex items-center justify-between xs:px-5 xs:py-7 sm:px-6 sm:py-8 md:px-7 lg:px-8 xl:px-8 2xl:px-9;
+		@apply text-primary py-5 px-2 flex items-center justify-between xs:px-5 xs:py-7 sm:px-6 sm:py-8 md:px-7 lg:px-8 xl:px-8 2xl:px-9;
 	}
 	.footer__description {
-		@apply text-xs md:text-sm xl:text-base;
+		@apply text-[11px] md:text-sm xl:text-base;
 	}
 	.footer__caption {
-		@apply text-xs md:text-sm xl:text-base;
+		@apply text-[11px] md:text-sm xl:text-base;
 	}
 }
 @layer utilities {
